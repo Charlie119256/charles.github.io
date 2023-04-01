@@ -1,1 +1,358 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(239, 242, 245) ;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+/*navbar*/
+.topnav {
+  position: absolute;
+  background-color: #00cccc;
+  justify-content: center;
+  align-items: center;
+  height: 12%;
+  width: 100%;
+}
+.topnav ul{
+  display: flex;
+  list-style: none;
+}
+.topnav ul li{
+  font-size: 17px;
+  font-weight: bold;
+}
+.topnav ul li a{
+  position: relative;
+  top: -70%;
+  text-decoration: none;
+  color: #1a1a1a;
+  padding: 14px 16px;
+  background-color: #00b3b3;
+  text-align: center;
+}
+.topnav ul li a:hover {
+  background-color: #006666 ;
+  color: white;
+}
+
+.topnav ul li a.active {
+  background-color: #003333;
+  color: white;
+} 
+
+.logo{
+  position: relative;
+  text-align: center;
+  color: #001a1a;
+  font-size: 25px;
+  top: 20%; 
+}
+
+/* Homecontent */
+.homeimage{
+  position: absolute;
+  right: 35%;
+}
+.introduction{
+  color: #001a1a;
+  font-size: 40px;
+  font-weight: bold;
+}
+.hcharles{
+  position: absolute;
+  left: 5%;
+  top: 40%;
+}
+.hkyle{
+  position: absolute;
+  top: 40%;
+  right: 12%;
+}
+#im{
+  position: absolute;
+  left: 35%;
+}
+
+#cpc{
+  position: absolute;
+  font-size: 30px;
+  bottom: 2%;
+  right: 31%;
+}
+
+
+/* ACTIVITIES */
+.Activities{
+  position: absolute;
+  right: 35%;
+  top: 30%;
+  height: 50%;
+  width: 30%;
+  background-color: #e6e6e6;
+  box-shadow: 10px 10px 10px 1px #a6a6a6;
+  transition: 1s;
+
+}
+.Activities:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+}
+.Activities ul{
+  list-style: none;
+}
+.Activities ul li{
+  font-size: 17px;
+  font-weight: bold;
+}
+.Activities ul li a{
+  position: absolute;
+  text-decoration: none;
+  padding: 14px 16px;
+  color: #1a1a1a;
+}
+.activity1{
+  position: absolute;
+  right: 35%;
+  top: 18%
+}
+.Activities ul li a:hover {
+  background-color: #006666;
+  color: #e6e6e6;
+}
+
+
+/* CONTACT*/
+.contact{
+  position: absolute;
+  right: 15%;
+  top: 30%;
+  height: 50%;
+  width: 70%;
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+  box-shadow: 10px 10px 10px 1px #a6a6a6;
+  transition: 1s;
+}
+.contact:hover {
+  background-color: #e6e6e6;
+  box-shadow: none;
+}
+.contact ul{
+  list-style: none;
+}
+.contact ul li{
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px;
+}
+.contact ul li a{
+  text-decoration: none;
+  color: #1a1a1a;
+}
+.contact ul li a:hover{
+  background-color: #006666;
+  color: #e6e6e6;
+}
+
+.contacts{
+  text-align: center;
+  padding: 10px;
+}
+
+.contactcharles{
+  position: absolute;
+  left: 11%;
+}
+.contactkyle{
+  position: absolute;
+  right: 23%;
+}
+.charlescontacts{
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+.kylecontacts{
+  position: absolute;
+  right: 10%;
+  top: 40%;
+}
+
+/* RESUME*/
+
+
+.charlesphoto{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: #001a1a;
+}
+.charlesresume {
+  position: absolute;
+  left: 25%;
+  top: 35%;
+  background-color: white;
+  height: 1180px;
+  width: 50%;
+}
+
+
+.firstinfos{
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #006666;
+}
+
+.infos{
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  color: #0d0d0d;
+}
+
+.charlesfullname{
+  position: relative;
+  right: -23%;
+  color: black;
+}
+.firsthr{
+  height: 5px;
+  background-color: #001a1a;
+  border-color: #001a1a;
+}
+
+.resumeinformation{
+  position: relative;
+  width: 600px;
+  right: -10%;
+  color: #0d0d0d;
+}
+
+.school{
+  position: absolute;
+}
+
+.year{
+  position: relative;
+  right: -55%;
+}
+
+
+
+.kylephoto{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: #001a1a;
+}
+.kyleresume {
+  position: absolute;
+  left: 25%;
+  top: 235%;
+  background-color:  white;
+  transition: 1s;
+  height: 1180px;
+  width: 50%;
+}
+.kylefullname{
+  position: relative;
+  right: -32%;
+  color: black;
+}
+
+
+/* FOOTER */
+.footer{
+  background-color: #003333;  
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  bottom: -10%;
+}
+.foot {
+  position: relative;
+  color: white;
+  padding: 14px 16px;
+  bottom: -15%;
+  text-align: center;
+}
+
+
+.abfooter{
+  background-color: #003333;  
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  bottom: -350%;
+}
+.abfoot {
+  position: relative;
+  color: white;
+  padding: 14px 16px;
+  bottom: -15%;
+  text-align: center;
+}
+
+.tfooter{
+  background-color: #003333;  
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  bottom: -120%;
+}
+.tfoot {
+  position: relative;
+  color: white;
+  padding: 14px 16px;
+  bottom: -15%;
+  text-align: center;
+}
+
+.nikolatesla{
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  height: 1020px;
+  background-color: rgb(4, 54, 58);
+  width: 1200px;
+  color: white;
+}
+
+.teslaprofile{
+  background: url(../images/electricity.jpg);
+  position: relative;
+  height: 410px;
+  width: 1200px;
+}
+.nikolaphoto{
+  position: absolute;
+  top: 1%;
+  left: 3%;
+  height: 400px;
+
+}
+.nikolafullname{
+  position: absolute;
+  left: 30%;
+  bottom: 39%;
+  font-size: 100px;
+}
+
+.nikolaimage{
+  position: absolute;
+  height: 610px;
+}
+.nikolainformations{
+  color: #000000;
+  position: absolute;
+  left: 30%;
+  bottom: -15%;
+  padding: 200px;
+  font-size: 20px;
+}
