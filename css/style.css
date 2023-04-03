@@ -9,12 +9,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*navbar*/
+/*navbar/ primary*/
 .topnav {
   position: absolute;
   background-color: #00cccc;
-  justify-content: center;
-  align-items: center;
   height: 12%;
   width: 100%;
 }
@@ -33,7 +31,6 @@ body {
   color: #1a1a1a;
   padding: 14px 16px;
   background-color: #00b3b3;
-  text-align: center;
 }
 .topnav ul li a:hover {
   background-color: #006666 ;
@@ -52,6 +49,73 @@ body {
   font-size: 25px;
   top: 20%; 
 }
+/* ENd of Primary nav*/
+
+
+/*Side Nav / Secondary nav*/
+.sidenav {
+  position: fixed;
+  top: 14%;
+  left: 1%;
+  background-color: #00cccc;
+  height: 40%;
+  width: 8%;
+}
+
+.sidenav ul{
+  list-style: none;
+  position: absolute;
+  position: relative;
+  right: 12%;
+  top: 30%;
+}
+
+.sidenav ul li{
+  font-size: 17px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.sidenav ul li a{
+  position: relative;
+  top: 20%;
+  text-decoration: none;
+  color: #1a1a1a;
+  background-color: #00b3b3;
+  padding: 10px 15px;
+}
+
+.sidenav ul li a:hover {
+  background-color: #006666 ;
+  color: white;
+}
+
+.sidenav ul li a.active {
+  background-color: #003333;
+  color: white;
+} 
+/*about us*/
+.resume{
+  position: absolute;
+  right: 15%;
+  top: 10%;
+  color: #001a1a;
+}
+
+/*Tribute*/
+.tribute{
+  position: absolute;
+  right: 22%;
+  top: 10%;
+  color: #001a1a;
+}
+
+#back {
+  position: absolute;
+  right: 15%;
+}
+
+/*End of Secondary nav*/
 
 /* Homecontent */
 .homeimage{
@@ -84,9 +148,15 @@ body {
   bottom: 2%;
   right: 31%;
 }
-
+/*ENd of Home Content*/
 
 /* ACTIVITIES */
+
+.activitiesno{
+  text-align: center;
+  padding: 10px;
+  color: #001a1a;
+}
 .Activities{
   position: absolute;
   right: 35%;
@@ -96,7 +166,6 @@ body {
   background-color: #e6e6e6;
   box-shadow: 10px 10px 10px 1px #a6a6a6;
   transition: 1s;
-
 }
 .Activities:hover {
   background-color: #e6e6e6;
@@ -124,6 +193,21 @@ body {
   background-color: #006666;
   color: #e6e6e6;
 }
+/*Tooltip*/
+.travel{
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  background-color: #001a1a;
+  padding: 10px 10px 10px 10px;
+  right: -125%;
+  top: 8%;
+}
+.activity1:hover .travel{
+  visibility: visible;
+}
+/*End of Activity Content*/
+
 
 
 /* CONTACT*/
@@ -162,12 +246,14 @@ body {
 .contacts{
   text-align: center;
   padding: 10px;
+  color: #001a1a;
 }
 
 .contactcharles{
   position: absolute;
   left: 11%;
 }
+
 .contactkyle{
   position: absolute;
   right: 23%;
@@ -182,10 +268,20 @@ body {
   right: 10%;
   top: 40%;
 }
+/*End of Contacts Content*/
 
-/* RESUME*/
 
+/* About Us*/
 
+.aboutus{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  font-size: 50px;
+  color: #003333;
+}
+
+/*Charles REsume*/
 .charlesphoto{
   position: relative;
   height: 200px;
@@ -194,8 +290,8 @@ body {
 }
 .charlesresume {
   position: absolute;
-  left: 25%;
-  top: 35%;
+  left: 26%;
+  top: 20%;
   background-color: white;
   height: 1180px;
   width: 50%;
@@ -243,7 +339,10 @@ body {
   right: -55%;
 }
 
+/*ENd of Charles' Resume*/
 
+
+/*Kyle's Resume*/
 
 .kylephoto{
   position: relative;
@@ -253,8 +352,8 @@ body {
 }
 .kyleresume {
   position: absolute;
-  left: 25%;
-  top: 235%;
+  left: 26%;
+  top: 20%;
   background-color:  white;
   transition: 1s;
   height: 1180px;
@@ -265,60 +364,35 @@ body {
   right: -32%;
   color: black;
 }
+/*End of kyle's Resume*/
+
+/*ENd of Resume Content*/
 
 
-/* FOOTER */
-.footer{
-  background-color: #003333;  
-  position: absolute;
-  height: 10%;
-  width: 100%;
-  bottom: -10%;
-}
-.foot {
-  position: relative;
-  color: white;
-  padding: 14px 16px;
-  bottom: -15%;
-  text-align: center;
-}
-
-
-.abfooter{
-  background-color: #003333;  
-  position: absolute;
-  height: 10%;
-  width: 100%;
-  bottom: -350%;
-}
-.abfoot {
-  position: relative;
-  color: white;
-  padding: 14px 16px;
-  bottom: -15%;
-  text-align: center;
-}
-
-.tfooter{
-  background-color: #003333;  
-  position: absolute;
-  height: 10%;
-  width: 100%;
-  bottom: -120%;
-}
-.tfoot {
-  position: relative;
-  color: white;
-  padding: 14px 16px;
-  bottom: -15%;
-  text-align: center;
-}
 
 /* Tribute*/
+
+.tributepage{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  font-size: 50px;
+  color: #003333;
+}
+
+/*charles' Tribute*/
+.nikolaquote{
+  position: absolute;
+  left: 18%;
+  top: 20%;
+  font-size: 40px;
+  color: #003333;
+}
+
 .nikolatesla{
   position: absolute;
-  right: 5%;
-  top: 20%;
+  right: 1%;
+  top: 60%;
   height: 1020px;
   background-color: rgb(4, 54, 58);
   width: 1200px;
@@ -350,10 +424,124 @@ body {
   height: 610px;
 }
 .nikolainformations{
-  color: #000000;
+  color:  #d9d9d9;
   position: absolute;
   left: 30%;
   bottom: -15%;
   padding: 200px;
   font-size: 20px;
 }
+
+/*End of Charles' Tribute*/
+
+
+/*kyle's Tribute*/
+.lebronquote{
+  position: absolute;
+  left: 18%;
+  top: 20%;
+  font-size: 40px;
+  color: #003333;
+}
+
+.lebronjames{
+  position: absolute;
+  right: 1%;
+  top: 60%;
+  height: 1020px;
+  background-color: rgb(4, 54, 58);
+  width: 1200px;
+  color: white;
+}
+
+.lebronprofile{
+  background: url(../images/basketball.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  height: 410px;
+  width: 1200px;
+  background-size: 1200px;
+  
+}
+.lebronphoto{
+  position: absolute;
+  top: 1%;
+  left: 3%;
+  height: 400px;
+
+}
+.lebronfullname{
+  position: absolute;
+  left: 30%;
+  bottom: 39%;
+  font-size: 100px;
+}
+
+.lebronimage{
+  position: absolute;
+  height: 610px;
+}
+.lebroninformations{
+  color:  #d9d9d9;
+  position: absolute;
+  left: 30%;
+  bottom: -15%;
+  padding: 170px;
+  font-size: 20px;
+}
+
+/*End of kyle's Tribute*/
+
+
+/* FOOTER */
+/*Home , AboutUS, Activities, Tribute, Contacts Footer*/
+.footer{
+  background-color: #003333;  
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  bottom: -10%;
+}
+.foot {
+  position: relative;
+  color: white;
+  padding: 14px 16px;
+  bottom: -15%;
+  text-align: center;
+}
+
+/*Resume footer*/
+.abfooter{
+  background-color: #003333;  
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  bottom: -150%;
+}
+.abfoot {
+  position: relative;
+  color: white;
+  padding: 14px 16px;
+  bottom: -15%;
+  text-align: center;
+}
+/*End of Resume Footer*/
+
+/*tribute footer*/
+.tfooter{
+  background-color: #003333;  
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  bottom: -150%;
+}
+.tfoot {
+  position: relative;
+  color: white;
+  padding: 14px 16px;
+  bottom: -15%;
+  text-align: center;
+}
+/*End of tribute Footer*/
+
+/*ENd of Footers*/
